@@ -1,0 +1,134 @@
+import React from "react";
+import mnnitImage from "../assets/images/MNNIT3.png";
+import { motion } from "framer-motion";
+
+function Banner() {
+    return (
+        <div className="relative w-full bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 overflow-hidden">
+            {/* Background Pattern */}
+            <div className="absolute inset-0">
+                <div className="absolute top-0 left-0 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-200/10 rounded-full blur-2xl"></div>
+            </div>
+
+            <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    
+                    {/* Content Section */}
+                    <motion.div 
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="space-y-8"
+                    >
+                        {/* Conference Badge */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-sm font-medium shadow-lg"
+                        >
+                            <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
+                            International Conference
+                        </motion.div>
+
+                        {/* Main Title */}
+                        <motion.h1 
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.3 }}
+                            className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight"
+                        >
+                            An International Conference
+                            <span className="block text-3xl lg:text-4xl font-medium text-gray-700 mt-2">on</span>
+                            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                                Applied Mathematics and Computational Fluid Dynamics
+                            </span>
+                            <span className="block text-2xl lg:text-3xl font-semibold text-gray-800 mt-4">
+                                [ICAMCFD 2026]
+                            </span>
+                        </motion.h1>
+
+                        {/* Conference Details */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.5 }}
+                            className="space-y-4"
+                        >
+                            <div className="flex items-center space-x-6 text-gray-600">
+                                <div className="flex items-center space-x-2">
+                                    <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    <span>January 30 – February 01, 2026</span>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
+                                    </svg>
+                                    <span>[HYBRID MODE]</span>
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        {/* Organizer Info */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.7 }}
+                            className="space-y-3"
+                        >
+                            <p className="text-gray-600 font-medium">Organized by</p>
+                            <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl p-4 shadow-lg">
+                                <p className="text-lg font-semibold text-gray-800">Department of Mathematics, MNNITA</p>
+                                <p className="text-sm text-gray-600">Motilal Nehru National Institute of Technology Allahabad</p>
+                            </div>
+                        </motion.div>
+
+                        {/* CTA Buttons */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.9 }}
+                            className="flex flex-col sm:flex-row gap-4"
+                        >
+                            <motion.a
+                                href="/registration"
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+                            >
+                                Register Now
+                            </motion.a>
+                        </motion.div>
+                    </motion.div>
+
+                    {/* Image Section */}
+                    <motion.div 
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                        className="relative"
+                    >
+                        <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 z-10"></div>
+                            <img 
+                                className="w-full h-96 object-cover hover:scale-105 transition-transform duration-700"
+                                src={mnnitImage}
+                                alt="MNNIT Allahabad Campus"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-6">
+                                <p className="text-white font-semibold">MNNIT Allahabad Campus</p>
+                                <p className="text-white/80 text-sm">Prayagraj, Uttar Pradesh</p>
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Banner;
