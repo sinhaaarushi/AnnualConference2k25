@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import Banner from "../components/Banner.jsx";
 import {Outlet, useLocation} from "react-router-dom";
 
-const App = () => {
+const HomePage = () => {
 
     const location = useLocation();
 
@@ -10,14 +10,29 @@ const App = () => {
     useEffect(() => {
         const hash = window.location.hash;
         if (hash) {
-            const element = document.getElementById(decodeURIComponent(hash.substring(1)));
-            if (element) {
-                const elementTop = element.getBoundingClientRect().top + window.pageYOffset;
-                window.scrollTo({
-                    top: elementTop -100,
-                    behavior: "smooth"
-                });
-            }
+            // Add a small delay to ensure DOM is fully rendered
+            setTimeout(() => {
+                const element = document.getElementById(decodeURIComponent(hash.substring(1)));
+                if (element) {
+                    // Get navbar height dynamically and add extra padding
+                    const navbar = document.querySelector('nav');
+                    const navbarHeight = navbar ? navbar.offsetHeight : 100;
+                    
+                    // Special handling for timeline and publication sections
+                    const sectionId = decodeURIComponent(hash.substring(1));
+                    let extraPadding = 80; // Default padding
+                    
+                    if (sectionId === 'timeline' || sectionId === 'publication') {
+                        extraPadding = 120; // Extra padding for these sections
+                    }
+                    
+                    const elementTop = element.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({
+                        top: elementTop - navbarHeight - extraPadding,
+                        behavior: "smooth"
+                    });
+                }
+            }, 100);
         } else {
             window.scrollTo({top: 1, behavior: "smooth"});
         }
@@ -37,4 +52,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default HomePage;

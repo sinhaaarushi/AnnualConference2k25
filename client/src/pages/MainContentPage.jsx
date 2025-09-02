@@ -5,6 +5,8 @@ import Publication from "../components/PaperSubmissionPageComponents/Publication
 import AboutInstitute from "../components/MainPageComponents/AboutInstitute.jsx";
 import StatsSection from "../components/MainPageComponents/StatsSection.jsx";
 import CTASection from "../components/MainPageComponents/CTASection.jsx";
+import FundingSponsoringAgencies from "../components/MainPageComponents/FundingSponsoringAgencies.jsx";
+import AbstractSubmission from "../components/MainPageComponents/AbstractSubmission.jsx";
 
 const MainContentPage = () => {
 
@@ -13,6 +15,8 @@ const MainContentPage = () => {
         <StatsSection/>
         <TimeLine/>
         <AboutInstitute/>
+        <FundingSponsoringAgencies/>
+        <AbstractSubmission/>
         <Publication/>
         <CTASection/>
         {/*<Sponsors/>*/}

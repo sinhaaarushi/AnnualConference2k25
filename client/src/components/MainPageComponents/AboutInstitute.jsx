@@ -2,8 +2,8 @@ import React from "react";
 import mnnitImage from "../../assets/images/MNNIT3.png";
 
 function AboutInstitute() {
-    return (<section id="about institute"
-                     className="mb-8 flex-col rounded-md text-base-content w-full flex items-center">
+    return (        <section id="about institute"
+                     className="mb-8 flex-col rounded-md text-base-content w-full flex items-center pt-28">
         <div className="max-w-[1100px]">
             <h2
                 className="text-center text-primary text-4xl font-bold leading-normal mb-6 lg:text-start font-playfair relative">

@@ -6,12 +6,18 @@ import HomePage from "./pages/HomePage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import MainContentPage from "./pages/MainContentPage.jsx";
 import CommitteePage from "./pages/CommitteePage.jsx";
+import InternationalAdvisoryCommitteePage from "./pages/InternationalAdvisoryCommitteePage.jsx";
+import NationalAdvisoryCommitteePage from "./pages/NationalAdvisoryCommitteePage.jsx";
+import OrganisingCommitteePage from "./pages/OrganisingCommitteePage.jsx";
 import PaperSubmissionPage from "./pages/PaperSubmissionPage.jsx";
 import SchedulePage from "./pages/SchedulePage.jsx";
 import AdvisoryCommittee from "./pages/AdvisoryCommittee.jsx";
 import SubmissionGuidelinesPage from "./pages/SubmissionGuidelines.jsx";
 import RegistrationPage from "./pages/RegistrationPage.jsx";
 import SpecialSession from "./pages/SpecialSession.jsx";
+import TimelinePage from "./pages/TimelinePage.jsx";
+import KeynoteSpeakersPage from "./pages/KeynoteSpeakersPage.jsx";
+import InvitedSpeakersPage from "./pages/InvitedSpeakersPage.jsx";
 
 function App() {
     const router = createBrowserRouter([
@@ -31,6 +37,15 @@ function App() {
                                 path: "committee",
                                 element: <CommitteePage/>
                             }, {
+                                path: "committee/international-advisory",
+                                element: <InternationalAdvisoryCommitteePage/>
+                            }, {
+                                path: "committee/national-advisory",
+                                element: <NationalAdvisoryCommitteePage/>
+                            }, {
+                                path: "committee/organising",
+                                element: <OrganisingCommitteePage/>
+                            }, {
                                 path: "paperSubmission",
                                 element: <PaperSubmissionPage/>
                             }, {
@@ -48,6 +63,15 @@ function App() {
                             }, {
                             path: "specialSession",
                                 element: <SpecialSession/>
+                            }, {
+                                path: "timeline",
+                                element: <TimelinePage/>
+                            }, {
+                                path: "keynote-speakers",
+                                element: <KeynoteSpeakersPage/>
+                            }, {
+                                path: "invited-speakers",
+                                element: <InvitedSpeakersPage/>
                             }
                         ]
                     }

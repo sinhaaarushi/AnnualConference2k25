@@ -11,14 +11,17 @@ process.on("uncaughtException", (err) => {
 });
 
 const mongoose = require("mongoose");
-const DB = process.env.DATABASE.replace(
-    "<password>",
-    process.env.DATABASE_PASSWORD
-);
+const DB = process.env.DATABASE;
+
+// Try to connect to MongoDB, but don't crash if it's not available
 mongoose
     .connect(DB)
     .then(() => {
         console.log("Connected to database!");
+    })
+    .catch((err) => {
+        console.log("Warning: Could not connect to MongoDB. Some features may not work.");
+        console.log("Error:", err.message);
     });
 
 const app = require("./app");

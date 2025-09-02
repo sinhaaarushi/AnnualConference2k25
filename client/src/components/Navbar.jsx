@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/images/MNNIT logo.png";
-import icamcfdLogo from "../assets/images/ICAMCFD-2026-logo.png";
+import icamcfdLogo from "../assets/images/ICAMCFD_LOGO.jpeg";
 import Dropdown from "./NavbarComponents/Dropdown.jsx";
 import Accessability from "./NavbarComponents/Accessability.jsx";
 import {IoCloseCircleOutline, IoMenu} from "react-icons/io5";
@@ -19,13 +19,17 @@ const Navbar = () => {
         sublinks: [{name: "About the Conference", link: "/#about%20conference"}, {
             name: "Timeline",
             link: "/#timeline"
-        }, {name: "Publication", link: "/#publication"}, {name: "About the Institute", link: "/#about%20institute"}]
+        }, {name: "About the Institute", link: "/#about%20institute"}, {name: "Funding & Sponsoring Agencies", link: "/#funding%20sponsoring%20agencies"}, {name: "Abstract Submission", link: "/#abstract%20submission"}, {name: "Publication", link: "/#publication"}]
     }, {
-        name: "Committee", link: "/committee", sublinks: [{name: "Organising Committee", link: "/committee"}]
+        name: "Committee", link: "/committee", sublinks: [
+            {name: "Local Organising Committee", link: "/committee/organising"}, 
+            {name: "National Advisory Committee", link: "/committee/national-advisory"}, 
+            {name: "International Advisory Committee", link: "/committee/international-advisory"}
+        ]
     }, {
         name: "Conference Program",
         link: "/schedule",
-        sublinks: [{name: "Timeline", link: "/schedule"}, {name: "Keynote Speakers", link: "/schedule#Keynote"}, {name: "Invited Speakers", link: "/schedule#Invited"}]
+        sublinks: [{name: "Timeline", link: "/timeline"}, {name: "Keynote Speakers", link: "/keynote-speakers"}, {name: "Invited Speakers", link: "/invited-speakers"}]
     }, {
         name: "Registration", link: "/registration"
     }, {
@@ -37,7 +41,7 @@ const Navbar = () => {
             <div className="flex w-full justify-between md:justify-start px-4 max-w-[1400px] items-center py-1">
                 <div className="flex items-center gap-3">
                     <img className="w-12" src={logo} alt="MNNIT"/>
-                    <img className="w-16 mix-blend-multiply" src={icamcfdLogo} alt="ICAMCFD-2026"/>
+                    <img className="w-24 mix-blend-multiply" src={icamcfdLogo} alt="ICAMCFD-2026"/>
                 </div>
 
                 <div className="md:hidden drawer-end z-10 relative right-[30px]">

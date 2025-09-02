@@ -95,7 +95,7 @@ exports.logout = catchAsync(async (req, res, next) => {
 
     res.cookie("jwt", "", options).json({
         status: "success", message: "cookie deleted"
-    })
+    });
 
 });
 

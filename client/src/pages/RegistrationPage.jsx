@@ -23,35 +23,47 @@ function RegistrationPage() {
                     <thead className="bg-gradient-to-r from-primary to-secondary text-white">
                     <tr className="border-b border-gray-300">
                         <th className="px-6 py-4 border-r border-white/20 text-left text-sm font-semibold">Participants Category</th>
-                        <th className="px-6 py-4 border-r border-white/20 text-center text-sm font-semibold">Offline</th>
-                        <th className="px-6 py-4 text-center text-sm font-semibold">Online</th>
+                        <th className="px-6 py-4 border-r border-white/20 text-center text-sm font-semibold">Offline (Base)</th>
+                        <th className="px-6 py-4 border-r border-white/20 text-center text-sm font-semibold">Offline (Total with 18% GST)</th>
+                        <th className="px-6 py-4 border-r border-white/20 text-center text-sm font-semibold">Online (Base)</th>
+                        <th className="px-6 py-4 text-center text-sm font-semibold">Online (Total with 18% GST)</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr className="border-b border-gray-200 hover:bg-blue-50 transition-colors duration-200">
                         <td className="px-6 py-4 border-r border-gray-200 font-medium text-gray-900">Research scholars</td>
                         <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">Rs. 3000/-</td>
-                        <td className="px-6 py-4 text-center font-semibold text-blue-600">Rs. 2000/-</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-green-600">Rs. 3540/-</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">Rs. 2000/-</td>
+                        <td className="px-6 py-4 text-center font-semibold text-green-600">Rs. 2360/-</td>
                     </tr>
                     <tr className="border-b border-gray-200 hover:bg-blue-50 transition-colors duration-200">
                         <td className="px-6 py-4 border-r border-gray-200 font-medium text-gray-900">Faculty/Academicians</td>
                         <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">Rs. 5000/-</td>
-                        <td className="px-6 py-4 text-center font-semibold text-blue-600">Rs. 3000/-</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-green-600">Rs. 5900/-</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">Rs. 3000/-</td>
+                        <td className="px-6 py-4 text-center font-semibold text-green-600">Rs. 3540/-</td>
                     </tr>
                     <tr className="border-b border-gray-200 hover:bg-blue-50 transition-colors duration-200">
                         <td className="px-6 py-4 border-r border-gray-200 font-medium text-gray-900">Industrial Participants</td>
                         <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">Rs. 6000/-</td>
-                        <td className="px-6 py-4 text-center font-semibold text-blue-600">Rs. 4000/-</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-green-600">Rs. 7080/-</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">Rs. 4000/-</td>
+                        <td className="px-6 py-4 text-center font-semibold text-green-600">Rs. 4720/-</td>
                     </tr>
                     <tr className="border-b border-gray-200 hover:bg-blue-50 transition-colors duration-200">
                         <td className="px-6 py-4 border-r border-gray-200 font-medium text-gray-900">Foreign Participants</td>
                         <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">USD 150</td>
-                        <td className="px-6 py-4 text-center font-semibold text-blue-600">USD 100</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-green-600">USD 177</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">USD 100</td>
+                        <td className="px-6 py-4 text-center font-semibold text-green-600">USD 118</td>
                     </tr>
                     <tr className="border-b border-gray-200 hover:bg-blue-50 transition-colors duration-200">
                         <td className="px-6 py-4 border-r border-gray-200 font-medium text-gray-900">Attendees</td>
                         <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">Rs. 2500/-</td>
-                        <td className="px-6 py-4 text-center font-semibold text-blue-600">Rs. 1500/-</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-green-600">Rs. 2950/-</td>
+                        <td className="px-6 py-4 border-r border-gray-200 text-center font-semibold text-blue-600">Rs. 1500/-</td>
+                        <td className="px-6 py-4 text-center font-semibold text-green-600">Rs. 1770/-</td>
                     </tr>
                     </tbody>
                 </table>
@@ -59,6 +71,9 @@ function RegistrationPage() {
 
             <div className="mt-8">
                 <h3 className="text-xl font-medium underline mb-4">Registration Link</h3>
+                <p className="text-lg font-semibold text-gray-700 mb-6">TBD</p>
+                
+                <h3 className="text-xl font-medium underline mb-4">Payment Link</h3>
                 <p className="text-lg font-semibold text-gray-700 mb-6">TBD</p>
                 
                 <h3 className="text-xl font-medium underline mb-4">Bank A/C Details</h3>

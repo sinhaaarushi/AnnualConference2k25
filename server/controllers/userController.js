@@ -69,7 +69,7 @@ exports.isAdmin = catchAsync(async (req, res, next) => {
     return res.status(200).json({
         status: 'success', isAdmin: !!user.isAdmin
     });
-})
+});
 
 exports.deleteTask = catchAsync(async (req, res, next) => {
     const user = { ...req.user._doc };

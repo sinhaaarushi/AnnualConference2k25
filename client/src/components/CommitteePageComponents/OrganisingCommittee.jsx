@@ -70,8 +70,12 @@ function OrganisingCommittee() {
     return (<section
         id="Organising Committee"
         className="flex-col rounded-md shadow-sm text-base-content flex items-center py-8 w-full">
-        <h2 className="mb-12 text-4xl font-playfair font-bold text-primary text-center">Organising
-            Committee</h2>
+        <h2 className="mb-12 text-4xl font-playfair font-bold text-primary text-center relative">
+            <span className="relative">
+                Local Organising Committee
+                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+            </span>
+        </h2>
         <div className="w-full max-w-6xl px-4">
             <div className="flex flex-col items-center">
                 {/* Level 1 - Patron */}

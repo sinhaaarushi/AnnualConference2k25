@@ -50,26 +50,31 @@ function InternationalAdvisoryCommittee() {
         className="mb-8 flex-col rounded-md text-base-content w-full flex items-center py-4">
 
         <div className="max-w-[1100px]"><h2
-            className="mb-8 text-4xl font-bold  text-primary font-playfair text-center">International Advisory
-            Committee</h2>
-            <div className="flex flex-row flex-wrap gap-5 justify-center">
+            className="mb-8 text-4xl font-bold text-primary font-playfair text-center relative">
+            <span className="relative">
+                International Advisory Committee
+                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+            </span>
+        </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                 {boardMembers.map(member =>
                     <div
-                        className="flex gap-4 shadow-sm p-4 w-full max-w-[350px] relative bg-base-200/50 hover:shadow-md transition-all duration-300"
+                        className="flex gap-4 shadow-sm p-6 rounded-lg relative bg-base-200/50 hover:shadow-lg hover:scale-105 transition-all duration-300 min-h-[140px]"
                         key={member.name}>
-                        <div className="avatar">
-                            <div className="w-16 rounded">
+                        <div className="avatar flex-shrink-0">
+                            <div className="w-20 rounded-full">
                                 <img src={member.image} alt={member.name}/>
                             </div>
                         </div>
-                        <div>
-                            <p className="text-lg font-medium">{member.name}</p>
-                            <p className="text-sm">{member.university}</p>
+                        <div className="flex flex-col justify-center flex-1">
+                            <p className="text-lg font-semibold mb-2">{member.name}</p>
+                            <p className="text-sm text-gray-600 leading-relaxed">{member.university}</p>
                         </div>
                         {member.homepage !== "#" && (
-                            <a className="absolute top-0 right-0 translate-y-1/2 -translate-x-1/2" href={member.homepage}
-                               target="_blank"><GoLinkExternal
-                                size={20}/></a>
+                            <a className="absolute top-3 right-3 text-primary hover:text-secondary transition-colors" href={member.homepage}
+                               target="_blank" rel="noopener noreferrer">
+                                <GoLinkExternal size={18}/>
+                            </a>
                         )}
                     </div>
                 )}

@@ -83,7 +83,7 @@ function TimeLine() {
     };
 
     return (
-        <section id="timeline" className="mb-8 flex-col rounded-md shadow-sm lg:p-8 bg-gradient-to-br from-base-100 to-base-200/50 text-base-content w-full flex items-center">
+        <section id="timeline" className="mb-8 flex-col rounded-md shadow-sm lg:p-8 bg-gradient-to-br from-base-100 to-base-200/50 text-base-content w-full flex items-center pt-36">
             <div className="max-w-[1200px] w-full">
                 <motion.h2 
                     initial={{ opacity: 0, y: -20 }}

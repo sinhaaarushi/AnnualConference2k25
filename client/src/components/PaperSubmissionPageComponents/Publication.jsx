@@ -3,7 +3,7 @@ import React from "react";
 function Publication() {
     return (<section
         id="publication"
-        className="mb-8 flex-col rounded-md shadow-sm lg:p-8 bg-base-200/40 text-base-content w-full flex items-center">
+        className="mb-8 flex-col rounded-md shadow-sm lg:p-8 bg-base-200/40 text-base-content w-full flex items-center pt-36">
 
         <div className="max-w-[1100px]">
             <h1 className="mb-6 text-4xl font-bold text-primary font-playfair relative">
