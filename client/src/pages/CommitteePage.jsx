@@ -2,6 +2,7 @@ import React from "react";
 import InternationalAdvisoryCommittee from "../components/CommitteePageComponents/InternationalAdvisoryCommittee.jsx";
 import NationalAdvisoryCommittee from "../components/CommitteePageComponents/NationalAdvisoryCommittee.jsx";
 import OrganisingCommittee from "../components/CommitteePageComponents/OrganisingCommittee.jsx";
+import TechnicalCommittee from "../components/CommitteePageComponents/TechnicalCommittee.jsx";
 
 function CommitteePage(){
 
@@ -10,6 +11,7 @@ function CommitteePage(){
             <InternationalAdvisoryCommittee/>
             <NationalAdvisoryCommittee/>
             <OrganisingCommittee/>
+            <TechnicalCommittee/>
         </main>
     )
 }

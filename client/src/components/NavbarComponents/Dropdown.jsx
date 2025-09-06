@@ -36,7 +36,7 @@ function Dropdown({el, prevPath}) {
         return isActive && isScrollInBounds ? "transition-all border-secondary border-b-2 font-medium" : "";
     };
 
-    return (<div className="relative h-full *:text-nowrap  w-full">
+    return (<div className="relative h-full *:text-nowrap w-full">
         {el.element ?
             <>{el.element}</>:
             el.sublinks ? (<>

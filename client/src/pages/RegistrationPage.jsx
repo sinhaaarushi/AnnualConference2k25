@@ -74,7 +74,24 @@ function RegistrationPage() {
                 <p className="text-lg font-semibold text-gray-700 mb-6">TBD</p>
                 
                 <h3 className="text-xl font-medium underline mb-4">Payment Link</h3>
-                <p className="text-lg font-semibold text-gray-700 mb-6">TBD</p>
+                <div className="text-center mb-6">
+                    <p className="text-lg font-semibold text-gray-700 mb-4">
+                        <a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=5483621" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           className="text-blue-600 hover:text-blue-800 underline">
+                            SBI Collect Payment Portal
+                        </a>
+                    </p>
+                    <p className="text-sm text-gray-600 mb-6">Click the link above or scan the QR code below to make payment</p>
+                    <div className="flex justify-center">
+                        <img 
+                            src="/QR.jpg" 
+                            alt="QR Code for SBI Collect Payment" 
+                            className="w-48 h-48 border border-gray-300 rounded-lg shadow-sm"
+                        />
+                    </div>
+                </div>
                 
                 <h3 className="text-xl font-medium underline mb-4">Bank A/C Details</h3>
                 <div className="overflow-x-auto">
@@ -82,23 +99,27 @@ function RegistrationPage() {
                         <tbody>
                         <tr className="hover:bg-gray-50 transition-colors duration-200">
                             <td className="px-4 py-3 border font-semibold bg-gray-50">Account Name</td>
-                            <td className="px-4 py-3 border font-mono">TBD</td>
+                            <td className="px-4 py-3 border font-mono">SNFCE MNNIT Allahabad</td>
                         </tr>
                         <tr className="hover:bg-gray-50 transition-colors duration-200">
                             <td className="px-4 py-3 border font-semibold bg-gray-50">Account Number</td>
-                            <td className="px-4 py-3 border font-mono">TBD</td>
+                            <td className="px-4 py-3 border font-mono">10424975574</td>
                         </tr>
                         <tr className="hover:bg-gray-50 transition-colors duration-200">
                             <td className="px-4 py-3 border font-semibold bg-gray-50">IFSC Code</td>
-                            <td className="px-4 py-3 border font-mono">TBD</td>
+                            <td className="px-4 py-3 border font-mono">SBIN0002580</td>
                         </tr>
                         <tr className="hover:bg-gray-50 transition-colors duration-200">
                             <td className="px-4 py-3 border font-semibold bg-gray-50">Bank and Branch</td>
-                            <td className="px-4 py-3 border font-mono">TBD</td>
+                            <td className="px-4 py-3 border font-mono">SBI, MNNIT Allahabad</td>
                         </tr>
                         <tr className="hover:bg-gray-50 transition-colors duration-200">
-                            <td className="px-4 py-3 border font-semibold bg-gray-50">Swift code</td>
-                            <td className="px-4 py-3 border font-mono">TBD</td>
+                            <td className="px-4 py-3 border font-semibold bg-gray-50">Swift Code</td>
+                            <td className="px-4 py-3 border font-mono">SBININBB828</td>
+                        </tr>
+                        <tr className="hover:bg-gray-50 transition-colors duration-200">
+                            <td className="px-4 py-3 border font-semibold bg-gray-50">GST Number</td>
+                            <td className="px-4 py-3 border font-mono">09AAAJM1116B2ZR</td>
                         </tr>
                         </tbody>
                     </table>

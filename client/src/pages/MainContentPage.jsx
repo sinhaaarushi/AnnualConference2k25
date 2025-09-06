@@ -19,7 +19,6 @@ const MainContentPage = () => {
         <AbstractSubmission/>
         <Publication/>
         <CTASection/>
-        {/*<Sponsors/>*/}
     </main>);
 };
 

@@ -10,8 +10,6 @@ const ErrorPage = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    console.log(error);
-
     const handleClearSiteData = async () => {
         dispatch(clearAllUser());
         await logoutUser(dispatch);
@@ -21,12 +19,6 @@ const ErrorPage = () => {
     return (<div
         className="p-10 bg-white mx-auto grid place-items-center text-center bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
         <div className="flex flex-col items-center justify-center align-middle">
-            {/*<FlagIcon className="mx-auto h-20 w-20 bg-gradient-to-r from-sky-400 to-emerald-600 bg-clip-text"/>*/}
-            {/*<img*/}
-            {/*    className="w-32"*/}
-            {/*    src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYml0MGhyZzc0MnMxbDJ4YnV5eGk2ZTR4MzBvYXlibWp4ZGJyZ2x6ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ePxvRzKyLW03hvFGXJ/giphy.webp"*/}
-            {/*    alt="quack quack"*/}
-            {/*/>*/}
             <Typography
                 variant="h1"
                 color="blue-gray"

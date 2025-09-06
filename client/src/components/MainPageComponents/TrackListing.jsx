@@ -94,8 +94,8 @@ function TrackListing() {
 
 
             <div className="w-full md:columns-3 text-sm">
-            {data.map((el,i)=><div className="p-4 bg-base-200/20 border px-6 rounded-lg  break-inside-avoid mb-4">
-                <h2 className="font-medium underline mb-2 ">Track <span className="">{i+1} :</span>{el.trackHeading}</h2>
+            {data.map((el,i)=><div className="p-4 bg-base-200/20 border px-6 rounded-lg break-inside-avoid mb-4">
+                <h2 className="font-medium underline mb-2">Track <span>{i+1} :</span>{el.trackHeading}</h2>
                 <ul className="list-disc">
                     {el.points.map(p=><li className="text-justify">{p}</li>)}
                 </ul>

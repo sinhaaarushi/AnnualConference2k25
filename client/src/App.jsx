@@ -9,6 +9,7 @@ import CommitteePage from "./pages/CommitteePage.jsx";
 import InternationalAdvisoryCommitteePage from "./pages/InternationalAdvisoryCommitteePage.jsx";
 import NationalAdvisoryCommitteePage from "./pages/NationalAdvisoryCommitteePage.jsx";
 import OrganisingCommitteePage from "./pages/OrganisingCommitteePage.jsx";
+import TechnicalCommitteePage from "./pages/TechnicalCommitteePage.jsx";
 import PaperSubmissionPage from "./pages/PaperSubmissionPage.jsx";
 import SchedulePage from "./pages/SchedulePage.jsx";
 import AdvisoryCommittee from "./pages/AdvisoryCommittee.jsx";
@@ -45,6 +46,9 @@ function App() {
                             }, {
                                 path: "committee/organising",
                                 element: <OrganisingCommitteePage/>
+                            }, {
+                                path: "committee/technical",
+                                element: <TechnicalCommitteePage/>
                             }, {
                                 path: "paperSubmission",
                                 element: <PaperSubmissionPage/>

@@ -1,57 +1,63 @@
 import React from "react";
 
-function InternationalAdvisoryCommittee() {
-    const boardMembers = [
+function TechnicalCommittee() {
+    const technicalMembers = [
         {
-            name: "Prof. H. Ohshima",
-            university: "Tokyo University of Science, Japan",
-            image: "/Hiroyuki Ohshima.jpeg",
-            homepage: "#"
-        },
-        {
-            name: "Prof. Stephen Herdt",
-            university: "TU Darmstadt, Germany",
+            name: "Aarushi Sinha",
+            role: "", 
+            university: "MNNIT",
             image: "/Random.jpeg",
             homepage: "#"
         },
         {
-            name: "Prof. Konstantinos Kontis",
-            university: "Glasgow, Scotland, UK",
-            image: "/Konstantinos Kontis.jpeg",
+            name: "Dakshta Patel",
+            role: "",
+            university: "MNNIT",
+            image: "/Random.jpeg",
             homepage: "#"
         },
         {
-            name: "Prof. Prashanta Dutta",
-            university: "Washington State University, USA",
-            image: "/Prashanta Dutta.jpeg",
+            name: "Anjali Sharma",
+            role: "",
+            university: "MNNIT",
+            image: "/Random.jpeg",
             homepage: "#"
         },
         {
-            name: "Prof. J F L Duval",
-            university: "CNRS Research Director - LIEC Laboratory, France",
-            image: "/Duval.jpeg",
+            name: "Aradhya Singh",
+            role: "",
+            university: "MNNIT",
+            image: "/Random.jpeg",
             homepage: "#"
         },
         {
-            name: "Prof. Olga Vinogradova",
-            university: "A.N. Frumkin Institute of Physical Chemistry and Electrochemistry, Russia",
-            image: "/Olga I. Vinogradova.jpeg",
+            name: "Amisha Kaushik",
+            role: "",
+            university: "MNNIT",
+            image: "/Random.jpeg",
+            homepage: "#"
+        },
+        {
+            name: "Shashi",
+            role: "",
+            university: "MNNIT",
+            image: "/Random.jpeg",
             homepage: "#"
         }
     ];
 
     return (<section
-        id="International Advisory Committee"
+        id="Technical Committee"
         className="mb-8 flex-col shadow-sm text-base-content w-full flex items-center bg-base-200/40 py-6">
         <div className="max-w-[1100px] flex flex-col items-center">
             <h2 className="mb-8 text-4xl font-bold text-primary font-playfair text-center relative">
                 <span className="relative">
-                    International Advisory Committee
+                    Technical Committee
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
                 </span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
-                {boardMembers.map((member, index) => <div
+                {technicalMembers.map((member, index) => <div
                     key={index}
                     className="relative bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex flex-col items-center text-center min-h-[200px]">
                     <div className="mb-4">
@@ -68,8 +74,8 @@ function InternationalAdvisoryCommittee() {
                         )}
                     </div>
                     <div className="flex-1 flex flex-col justify-center">
-                        <p className="font-semibold text-lg mb-2 text-gray-900 text-center">{member.name}</p>
-                        <p className="text-sm text-gray-600 text-center leading-relaxed">{member.university}</p>
+                        <p className="font-semibold text-lg mb-2 text-gray-900">{member.name}</p>
+                        <p className="text-sm text-gray-600">{member.university}</p>
                     </div>
                 </div>)}
             </div>
@@ -77,4 +83,4 @@ function InternationalAdvisoryCommittee() {
     </section>)
 }
 
-export default InternationalAdvisoryCommittee;
+export default TechnicalCommittee;

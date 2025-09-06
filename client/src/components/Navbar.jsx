@@ -4,9 +4,6 @@ import icamcfdLogo from "../assets/images/ICAMCFD_LOGO.jpeg";
 import Dropdown from "./NavbarComponents/Dropdown.jsx";
 import Accessability from "./NavbarComponents/Accessability.jsx";
 import {IoCloseCircleOutline, IoMenu} from "react-icons/io5";
-import spt1 from "../assets/documents/Special Session_track1.pdf";
-import spt2 from "../assets/documents/Special Session_track2.pdf";
-import {GrDocumentPdf} from "react-icons/gr";
 
 const Navbar = () => {
 
@@ -22,9 +19,10 @@ const Navbar = () => {
         }, {name: "About the Institute", link: "/#about%20institute"}, {name: "Funding & Sponsoring Agencies", link: "/#funding%20sponsoring%20agencies"}, {name: "Abstract Submission", link: "/#abstract%20submission"}, {name: "Publication", link: "/#publication"}]
     }, {
         name: "Committee", link: "/committee", sublinks: [
-            {name: "Local Organising Committee", link: "/committee/organising"}, 
+            {name: "Organising Committee", link: "/committee/organising"}, 
             {name: "National Advisory Committee", link: "/committee/national-advisory"}, 
-            {name: "International Advisory Committee", link: "/committee/international-advisory"}
+            {name: "International Advisory Committee", link: "/committee/international-advisory"},
+            {name: "Technical Committee", link: "/committee/technical"}
         ]
     }, {
         name: "Conference Program",
