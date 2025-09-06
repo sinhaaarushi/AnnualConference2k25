@@ -1,6 +1,7 @@
 import React from "react";
 import mnnitImage from "../assets/images/MNNIT3.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Banner() {
     return (
@@ -115,14 +116,17 @@ function Banner() {
                             transition={{ duration: 0.6, delay: 0.9 }}
                             className="flex flex-col sm:flex-row gap-4 justify-center"
                         >
-                            <motion.a
-                                href="/registration"
+                            <motion.div
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center"
                             >
-                                Register Now
-                            </motion.a>
+                                <Link
+                                    to="/registration"
+                                    className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center inline-block"
+                                >
+                                    Register Now
+                                </Link>
+                            </motion.div>
                         </motion.div>
                     </motion.div>
                 </div>

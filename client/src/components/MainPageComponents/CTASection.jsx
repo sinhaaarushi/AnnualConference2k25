@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function CTASection() {
     return (
@@ -17,14 +18,17 @@ function CTASection() {
                     </p>
                     
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                        <motion.a
-                            href="/registration"
+                        <motion.div
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-10 py-5 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center text-lg"
                         >
-                            Register Now
-                        </motion.a>
+                            <Link
+                                to="/registration"
+                                className="px-10 py-5 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center text-lg inline-block"
+                            >
+                                Register Now
+                            </Link>
+                        </motion.div>
                     </div>
                 </motion.div>
             </div>
